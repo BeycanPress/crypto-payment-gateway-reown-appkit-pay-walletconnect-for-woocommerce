@@ -1,0 +1,42 @@
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-list li {
+    width: 20%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.product-list li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.product-list li a img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .product-list li {
+        width: 50%;
+    }
+    
+}
+
+@media screen and (max-width: 400px) {
+    .product-list li {
+        width: 100%;
+    }
+    
+}

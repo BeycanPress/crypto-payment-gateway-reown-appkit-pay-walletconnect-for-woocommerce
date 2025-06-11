@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "es2016",
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "rootDir": "./src/ts",
+    "outDir": "./assets/js",
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/ts/**/*.ts"],
+  "exclude": ["node_modules", "vendor"]
+}
