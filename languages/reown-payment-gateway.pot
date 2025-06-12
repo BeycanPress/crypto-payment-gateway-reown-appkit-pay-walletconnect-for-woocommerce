@@ -1,0 +1,257 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Reown (WalletConnect) Payment Gateway for WooCommerce\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-12 07:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.8.0; wp-6.8.1; php-8.1.28\n"
+"X-Domain: reown-payment-gateway"
+
+#: app/Gateway.php:381
+msgid ""
+"AppKit ID is required for WalletConnect and AppKit, which are used to "
+"connect to mobile wallets on many networks. If you do not have a Project ID, "
+"Reown AppKit will not work. You can get your project ID by registering for "
+"Reown Cloud at the link below."
+msgstr ""
+
+#. Author of the plugin
+msgid "BeycanPress LLC"
+msgstr ""
+
+#: app/OtherPlugins.php:27 app/OtherPlugins.php:28 app/OtherPlugins.php:57
+msgid "BeycanPress Plugins"
+msgstr ""
+
+#: app/Gateway.php:350
+msgid "Completed"
+msgstr ""
+
+#: app/Gateway.php:536
+msgid "Customer has chosen Reown Payment gateway, payment is pending."
+msgstr ""
+
+#: app/Gateway.php:367
+msgid "Dark"
+msgstr ""
+
+#: app/Gateway.php:334
+msgid "Description"
+msgstr ""
+
+#: app/Gateway.php:323
+msgid "Enable"
+msgstr ""
+
+#: app/Gateway.php:358
+msgid "Enable Test Mode"
+msgstr ""
+
+#: app/Gateway.php:360
+msgid "Enable this to use the test environment for Reown Payment Gateway."
+msgstr ""
+
+#: app/Gateway.php:322
+msgid "Enable/Disable"
+msgstr ""
+
+#: app/Gateway.php:453
+msgid "Error processing checkout. Please try again."
+msgstr ""
+
+#: app/Gateway.php:381
+msgid "Get Reown AppKit ID"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://beycanpress.com"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://beycanpress.com/"
+msgstr ""
+
+#: app/Gateway.php:202
+msgid "Invalid order key."
+msgstr ""
+
+#: app/Gateway.php:225
+msgid "Invalid request."
+msgstr ""
+
+#: app/Gateway.php:366
+msgid "Light"
+msgstr ""
+
+#: app/Gateway.php:571
+msgid "Missing required payment data."
+msgstr ""
+
+#: app/Gateway.php:257
+msgid "Network not supported."
+msgstr ""
+
+#: app/OtherPlugins.php:76
+msgid "No product found!"
+msgstr ""
+
+#: app/Gateway.php:340
+msgid "Order button text"
+msgstr ""
+
+#: app/Gateway.php:238
+msgid "Order is not pending."
+msgstr ""
+
+#: app/Gateway.php:208 app/Gateway.php:232
+msgid "Order not found."
+msgstr ""
+
+#: app/Gateway.php:342
+msgid "Pay button on the checkout page"
+msgstr ""
+
+#: app/Gateway.php:337
+msgid "Pay with crypto wallets and exchanges by Reown (WalletConnect)"
+msgstr ""
+
+#: app/Gateway.php:331 app/Gateway.php:343 app/Gateway.php:475
+msgid "Pay with Reown (WalletConnect)"
+msgstr ""
+
+#: app/Gateway.php:346
+msgid "Payment complete order status"
+msgstr ""
+
+#: app/Gateway.php:286
+#, php-format
+msgid "Payment completed successfully with transaction ID: %s"
+msgstr ""
+
+#: app/Gateway.php:282
+msgid "Payment completed successfully."
+msgstr ""
+
+#: app/Gateway.php:249 app/Gateway.php:557
+msgid "Payment data is missing."
+msgstr ""
+
+#: app/Gateway.php:454
+msgid "Payment failed. Please try again."
+msgstr ""
+
+#: app/Gateway.php:533
+msgid "Payment is awaited."
+msgstr ""
+
+#: app/Gateway.php:170 app/Gateway.php:486
+msgid "Please set the receiver address in the settings."
+msgstr ""
+
+#: app/Gateway.php:175 app/Gateway.php:491
+msgid "Please set the Reown AppKit ID in the settings."
+msgstr ""
+
+#: app/Gateway.php:351
+msgid "Processing"
+msgstr ""
+
+#: app/Gateway.php:452
+msgid "Processing payment..."
+msgstr ""
+
+#: app/Gateway.php:373
+msgid "Receiver Address"
+msgstr ""
+
+#: app/Gateway.php:451
+msgid "Redirecting..."
+msgstr ""
+
+#. Name of the plugin
+msgid "Reown (WalletConnect) Payment Gateway for WooCommerce"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Reown (WalletConnect) Payment Gateway for WooCommerce allows you to accept "
+"payments in cryptocurrencies using the Reown AppKit."
+msgstr ""
+
+#: app/Gateway.php:379
+msgid "Reown AppKit ID"
+msgstr ""
+
+#: app/Gateway.php:113 app/Gateway.php:114
+msgid "Reown Payment Gateway"
+msgstr ""
+
+#: views/currency-list.php:21
+msgid "Select Currency"
+msgstr ""
+
+#: app/Gateway.php:370
+msgid "Select the theme for the payment interface."
+msgstr ""
+
+#: app/Gateway.php:356
+msgid "Test Mode"
+msgstr ""
+
+#: app/Gateway.php:375
+msgid "The address where the payment will be sent"
+msgstr ""
+
+#: app/Gateway.php:348
+msgid "The status to apply for order after payment is complete."
+msgstr ""
+
+#: app/Gateway.php:363
+msgid "Theme"
+msgstr ""
+
+#: app/Gateway.php:336
+msgid "This controls the description which the user sees during checkout."
+msgstr ""
+
+#: app/Gateway.php:330
+msgid "This controls the title which the user sees during checkout."
+msgstr ""
+
+#: app/Gateway.php:455
+msgid "This network is not supported by Reown Payment Gateway."
+msgstr ""
+
+#: app/Gateway.php:328
+msgid "Title"
+msgstr ""
+
+#: app/Gateway.php:273
+msgid "Transaction is not correct for this order."
+msgstr ""
+
+#: app/Gateway.php:456
+msgid "Waiting for currency conversion..."
+msgstr ""
+
+#: app/Gateway.php:523
+msgid ""
+"Was directly approved by Reown Payment Gateway as the order amount was zero!"
+msgstr ""
+
+#: app/Gateway.php:514
+msgid "Your order is complete."
+msgstr ""
+
+#: app/Gateway.php:516
+msgid "Your order is processing."
+msgstr ""

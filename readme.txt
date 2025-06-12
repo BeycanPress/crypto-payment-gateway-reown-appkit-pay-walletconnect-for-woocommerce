@@ -9,11 +9,44 @@ Version: 1.0.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
-Pay with WalletConnect for WooCommerce, Reown (WalletConnect) payment gateway, Cryptocurrency Payment Gateway for WooCommerce, Crypto Payments, Bitcoin, USDT, BNB, BTC, ETH
+Pay with WalletConnect for WooCommerce, Reown payment gateway, Crypto Payment Gateway for WooCommerce, Crypto Payments, Bitcoin, USDT, BNB, BTC, ETH
 
 == Description ==
 
 ### Reown (WalletConnect) Crypto Payment Gateway for WooCommerce
+
+Right after Reown announced AppKit Pay, we got to work integrating it with WooCommerce. This initial version—set to be improved further in the future—is now available. All you need to do is enter your wallet address in the settings and create an AppKit ID (Project ID) via Reown Cloud. That’s it! You can now accept crypto payments directly through WooCommerce using Reown (WalletConnect) AppKit Pay.
+
+See AppKit Pay here: https://docs.reown.com/appkit/payments/overview#appkit-pay
+
+= How to setup? =
+
+See: https://github.com/BeycanPress/reown-payment-gateway
+
+= Supported networks =
+
+* Ethereum
+* Polygon
+* Binance Smart Chain
+* Avalanche
+* Base
+
+And the testnet networks of these networks. We will add more networks in the future.
+
+= Supported currencies =
+
+Only native coin (like ETH, MATIC, BNB, AVAX, etc.) and some popular tokens (like USDC, USDT, DAI, etc.) are supported. We will add more tokens in the future.
+
+
+= Meet with CryptoPay =
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3vaoFL4XG10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+CryptoPay differs from this plugin in that we are the main developer and therefore we are constantly bringing new blockchain network support. However, since the Reown team is the main developer of the Reown plugin, you can't get paid from networks that they don't support.
+
+For example, CryptoPay supports networks like TON, XRP and Tron, which are not yet supported in AppKit.
+
+**<a href="https://beycanpress.com/cryptopay/?utm_source=wporg_readme&utm_medium=reown">Review CryptoPay Premium</a>**
 
 = Privacy notices =
 
@@ -40,5 +73,5 @@ You can easily translate with Loco translate.
 
 == Changelog ==
 
-= 1.0.1 =
+= 1.0.0 =
 * Plugin released.

@@ -1,18 +1,18 @@
 import gulp from 'gulp'
-import ts from 'gulp-typescript'
-import uglify from 'gulp-uglify'
-import rename from 'gulp-rename'
-
-const tsProject = ts.createProject('tsconfig.json')
+import esbuild from 'gulp-esbuild'
+import plumber from 'gulp-plumber'
 
 gulp.task('typescript', function () {
     return gulp
         .src('./src/ts/**/*.ts')
-        .pipe(tsProject())
-        .pipe(uglify())
+        .pipe(plumber())
         .pipe(
-            rename((path) => {
-                path.basename += '.min'
+            esbuild({
+                bundle: true,
+                minify: true,
+                target: 'es2020',
+                platform: 'browser',
+                outfile: 'main.min.js'
             })
         )
         .pipe(gulp.dest('./assets/js'))

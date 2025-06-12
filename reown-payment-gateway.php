@@ -8,19 +8,20 @@ defined('ABSPATH') || exit;
 // @phpcs:disable Generic.Files.LineLength 
 
 /**
- * Plugin Name: Reown (WalletConnect) Payment Gateway for WooCommerce
+ * Plugin Name: Reown (WalletConnect) Crypto Payment Gateway for WooCommerce
  * Version:     1.0.0
  * Plugin URI:  https://beycanpress.com/
- * Description: Reown (WalletConnect) Payment Gateway for WooCommerce allows you to accept payments in cryptocurrencies using the Reown AppKit.
+ * Description: Accept cryptocurrency payments in your WooCommerce store using Reown (WalletConnect) payment gateway.
  * Author:      BeycanPress LLC
  * Author URI:  https://beycanpress.com
+ * License:     GPLv3
  * Text Domain: reown-payment-gateway
  * Domain Path: /languages
  * Tags:        reown-payment-gateway
  * Requires at least: 5.0
  * Tested up to: 6.8
  * Requires PHP: 8.1
-*/
+ */
 
 
 require __DIR__ . '/vendor/autoload.php';
@@ -38,17 +39,18 @@ add_action('before_woocommerce_init', function (): void {
     }
 });
 
-add_action('woocommerce_blocks_loaded', function (): void {
-    if (class_exists('Automattic\WooCommerce\Blocks\Payments\Integrations\AbstractPaymentMethodType')) {
-        add_action('woocommerce_blocks_payment_method_type_registration', function ($registry): void {
-            $registry->register(new BeycanPress\ReownPaymentGateway\BlocksGateway());
+add_action('plugins_loaded', function (): void {
+    if (!defined('REOWN_PAYMENT_GATEWAY_PREMIUM')) {
+        add_filter('woocommerce_payment_gateways', function ($gateways) {
+            $gateways[] = \BeycanPress\ReownPaymentGateway\Gateway::class;
+            return $gateways;
+        });
+        add_action('woocommerce_blocks_loaded', function (): void {
+            if (class_exists('Automattic\WooCommerce\Blocks\Payments\Integrations\AbstractPaymentMethodType')) {
+                add_action('woocommerce_blocks_payment_method_type_registration', function ($registry): void {
+                    $registry->register(new BeycanPress\ReownPaymentGateway\BlocksGateway());
+                });
+            }
         });
     }
-});
-
-add_action('plugins_loaded', function (): void {
-    add_filter('woocommerce_payment_gateways', function ($gateways) {
-        $gateways[] = \BeycanPress\ReownPaymentGateway\Gateway::class;
-        return $gateways;
-    });
 });

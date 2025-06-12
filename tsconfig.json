@@ -2,7 +2,7 @@
   "compilerOptions": {
     "strict": true,
     "target": "es2016",
-    "module": "ESNext",
+    "module": "nodenext",
     "skipLibCheck": true,
     "rootDir": "./src/ts",
     "outDir": "./assets/js",

@@ -1,0 +1,14 @@
+/src
+/.git
+/.github
+/.wordpress-org
+.gitignore
+.distignore
+.gitattributes
+phpcs.xml
+readme.md
+gulpfile.mjs
+pnpm-lock.yaml
+package.json
+.prettierrc.json
+tsconfig.json

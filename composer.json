@@ -8,5 +8,9 @@
         "psr-4": {
             "BeycanPress\\ReownPaymentGateway\\": "app"
         }
+    },
+    "require": {
+        "beycanpress/currency-converter": "^0.1.2",
+        "multiplechain/evm-chains": "^0.1.24"
     }
 }
