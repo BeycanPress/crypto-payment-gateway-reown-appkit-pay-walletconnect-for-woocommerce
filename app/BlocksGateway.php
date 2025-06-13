@@ -37,6 +37,7 @@ class BlocksGateway extends AbstractPaymentMethodType
     public function __construct()
     {
         $this->name = Gateway::ID;
+        add_action('woocommerce_blocks_enqueue_checkout_block_scripts_after', [$this, 'anotherAssets']);
     }
 
     /**
@@ -106,5 +107,20 @@ class BlocksGateway extends AbstractPaymentMethodType
         );
 
         return [$this->scriptId];
+    }
+
+    /**
+     * @return void
+     */
+    public function anotherAssets(): void
+    {
+        if (wp_script_is($this->scriptId, 'registered')) {
+            wp_enqueue_style(
+                $this->scriptId,
+                REOWN_PAYMENT_GATEWAY_URL . 'assets/css/blocks.css',
+                [],
+                REOWN_PAYMENT_GATEWAY_VERSION
+            );
+        }
     }
 }

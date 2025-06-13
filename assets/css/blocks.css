@@ -1,0 +1,12 @@
+.reown-payment-gateway {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.reown-payment-gateway .wc-block-components-payment-method-icons {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 16px;
+}

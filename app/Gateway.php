@@ -143,7 +143,6 @@ class Gateway extends \WC_Payment_Gateway
         add_filter('woocommerce_order_button_html', [$this, 'configureOrderButtonHtml']);
 
         add_action('woocommerce_receipt_reown', [$this, 'pay']);
-        add_action('wp_enqueue_scripts', [$this, 'payment_scripts']);
         add_action('woocommerce_update_options_payment_gateways_' . $this->id, [$this, 'process_admin_options']);
 
         add_action('wp_ajax_reown_complete_payment', [$this, 'completePayment']);
@@ -176,6 +175,8 @@ class Gateway extends \WC_Payment_Gateway
             wp_redirect($order->get_checkout_order_received_url());
             exit();
         } else {
+            $this->payment_scripts();
+
             if (!$this->receiver) {
                 echo esc_html__('Please set the receiver address in the settings.', 'reown-payment-gateway');
                 return;
@@ -522,6 +523,8 @@ class Gateway extends \WC_Payment_Gateway
     public function payment_fields(): void
     {
         if (WC()->cart->total > 0) {
+            $this->payment_scripts();
+
             if (!$this->receiver) {
                 echo esc_html__('Please set the receiver address in the settings.', 'reown-payment-gateway');
                 return;
