@@ -8,7 +8,7 @@ on:
       - completed
 
 env:
-  PLUGIN_SLUG: reown-payment-gateway
+  PLUGIN_SLUG: crypto-payment-gateway-reown-appkit-pay-walletconnect-for-woocommerce
 
 jobs:
   deploy_to_wp_org:
