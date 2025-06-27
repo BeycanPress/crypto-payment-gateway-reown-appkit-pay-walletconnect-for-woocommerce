@@ -18,7 +18,7 @@ use BeycanPress\ReownPaymentGateway\Networks;
     <div class="currency-list-inner">
         <div class="currency-list-header">
             <div class="currency-list-title">
-                <?php echo esc_html__('Select Currency', 'reown-payment-gateway'); ?>
+                <?php echo esc_html__('Select Currency', 'crypto-payment-gateway-reown-appkit-pay-walletconnect-for-woocommerce'); ?>
             </div>
         </div>
 

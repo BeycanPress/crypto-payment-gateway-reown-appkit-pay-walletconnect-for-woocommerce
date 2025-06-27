@@ -15,9 +15,9 @@ defined('ABSPATH') || exit;
  * Author:      BeycanPress LLC
  * Author URI:  https://beycanpress.com
  * License:     GPLv3
- * Text Domain: reown-payment-gateway
+ * Text Domain: crypto-payment-gateway-reown-appkit-pay-walletconnect-for-woocommerce
  * Domain Path: /languages
- * Tags:        reown-payment-gateway
+ * Tags:        crypto, cryptocurrency, bitcoin, ethereum, woocommerce, payment gateway, walletconnect, reown, appkit pay
  * Requires at least: 5.0
  * Tested up to: 6.8
  * Requires PHP: 8.1

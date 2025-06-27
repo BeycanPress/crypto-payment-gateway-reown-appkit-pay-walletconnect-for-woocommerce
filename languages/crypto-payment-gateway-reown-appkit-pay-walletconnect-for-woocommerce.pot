@@ -1,0 +1,42 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Crypto Payment Gateway with Reown AppKit Pay "
+"(WalletConnect) for WooCommerce\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-27 05:12+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.8.0; wp-6.8.1; php-8.1.28\n"
+"X-Domain: crypto-payment-gateway-reown-appkit-pay-walletconnect-for-"
+"woocommerce"
+
+#. Description of the plugin
+msgid ""
+"Accept cryptocurrency payments in your WooCommerce store using Reown "
+"(WalletConnect) payment gateway."
+msgstr ""
+
+#. Author of the plugin
+msgid "BeycanPress LLC"
+msgstr ""
+
+#. Name of the plugin
+msgid ""
+"Crypto Payment Gateway with Reown AppKit Pay (WalletConnect) for WooCommerce"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://beycanpress.com"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://beycanpress.com/"
+msgstr ""

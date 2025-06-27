@@ -24,8 +24,8 @@ class OtherPlugins
         if (!isset($GLOBALS['beycanpress-plugins'])) {
             add_action('admin_menu', function () use ($pluginFile): void {
                 add_menu_page(
-                    esc_html__('BeycanPress Plugins', 'reown-payment-gateway'),
-                    esc_html__('BeycanPress Plugins', 'reown-payment-gateway'),
+                    esc_html__('BeycanPress Plugins', 'crypto-payment-gateway-reown-appkit-pay-walletconnect-for-woocommerce'),
+                    esc_html__('BeycanPress Plugins', 'crypto-payment-gateway-reown-appkit-pay-walletconnect-for-woocommerce'),
                     'manage_options',
                     'beycanpress-plugins',
                     [$this, 'page'],
@@ -54,7 +54,7 @@ class OtherPlugins
         ?>
         <div class="wrap">
             <h1 class="wp-heading-inline">
-                <?php echo esc_html__('BeycanPress Plugins', 'reown-payment-gateway'); ?>
+                <?php echo esc_html__('BeycanPress Plugins', 'crypto-payment-gateway-reown-appkit-pay-walletconnect-for-woocommerce'); ?>
             </h1>
             <hr class="wp-header-end">
             <br>
@@ -73,7 +73,7 @@ class OtherPlugins
                                         </li>
                                     <?php endforeach;
                                 else :
-                                    echo esc_html__('No product found!', 'reown-payment-gateway');
+                                    echo esc_html__('No product found!', 'crypto-payment-gateway-reown-appkit-pay-walletconnect-for-woocommerce');
                                 endif; ?>
                             </ul>
                         </div>

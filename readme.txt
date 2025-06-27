@@ -61,6 +61,10 @@ With the default configuration, this plugin, in itself, does not:
     * Privacy policy: https://beycanpress.com/privacy-policy/
     * This is our website. We use it to provide support and sell premium plugins.
 
+* https://reown.com/
+    * Privacy policy: https://reown.com/privacy-policy
+    * This is the main package to accept crypto payments on this plugin.
+
 = Translations =
 
 You can easily translate with Loco translate.
