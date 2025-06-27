@@ -10,7 +10,7 @@
         }
     },
     "require": {
-        "beycanpress/currency-converter": "^0.1.2",
+        "beycanpress/currency-converter": "0.1.4",
         "multiplechain/evm-chains": "^0.1.24"
     }
 }

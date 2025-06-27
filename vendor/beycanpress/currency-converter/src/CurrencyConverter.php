@@ -15,6 +15,11 @@ final class CurrencyConverter
     private $apiUrl;
 
     /**
+     * @var Client
+     */
+    private $client;
+
+    /**
      * @var string|null
      */
     private $apiKey = null;
@@ -58,6 +63,20 @@ final class CurrencyConverter
             throw new \Exception('Unsupported api!');
         }
 
+        if (!extension_loaded('curl')) {
+            throw new \Exception('Curl extension is not loaded!');
+        }
+
+        if (!extension_loaded('bcmath')) {
+            throw new \Exception('Bcmath extension is not loaded!');
+        }
+
+        if (!function_exists('file_get_contents')) {
+            throw new \Exception('file_get_contents function is not available!');
+        }
+
+        $this->client = new Client();
+
         $this->api = $api;
         $this->apiKey = $apiKey;
         $this->apiUrl = $this->apis[$api];
@@ -97,7 +116,7 @@ final class CurrencyConverter
     private function convertWithCoinGecko(string $from, string $to, float $amount) : ?float
     {   
         $tokenList = json_decode($this->cache(function() {
-            $tokenList = json_decode(file_get_contents('https://api.coingecko.com/api/v3/coins/list'));
+            $tokenList = $this->client->get('https://api.coingecko.com/api/v3/coins/list');
             
             $usdId = array_search('usd', array_column($tokenList, 'symbol'));
             $usdId2 = array_search('usd+', array_column($tokenList, 'symbol'));
@@ -117,11 +136,16 @@ final class CurrencyConverter
         $toId = array_search(strtolower($to), array_column($tokenList, 'symbol'));
         
         // if token not found
-        if (!$fromId || !$toId) {
+        if (!$toId) {
             return null;
         }
 
-        $cgFrom = $tokenList[$fromId]->id;
+        if (!$fromId) {
+            $cgFrom = strtolower($from);
+        } else {
+            $cgFrom = $tokenList[$fromId]->id;
+        }
+
         $cgTo = $tokenList[$toId]->id;
         $key = $cgFrom.$cgTo;
 
@@ -233,7 +257,7 @@ final class CurrencyConverter
     private function convertWithCryptoCompare(string $from, string $to, float $amount) : ?float
     {
         $apiUrl =  $this->apiUrl . '?fsym=' . $from . '&tsyms=' . $to;
-        $convertData = json_decode(file_get_contents($apiUrl));
+        $convertData = $this->client->get($apiUrl);
         if (isset($convertData->$to)) {
             return ($amount * $convertData->$to);
         } else {
