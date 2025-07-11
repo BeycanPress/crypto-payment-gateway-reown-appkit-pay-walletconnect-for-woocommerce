@@ -11,7 +11,9 @@ use BeycanPress\ReownPaymentGateway\Networks;
         <div class="spinner" id="spinner">
             <div class="spinner-circle"></div>
         </div>
-        <div class="loading-text" id="loadingText">Loading...</div>
+        <div class="loading-text" id="loadingText">
+            <?php echo esc_html__('Loading...', 'crypto-payment-gateway-reown-appkit-pay-walletconnect-for-woocommerce'); ?>
+        </div>
     </div>
 </div>
 <div class="currency-list-wrapper <?php echo esc_attr($this->theme); ?>">
