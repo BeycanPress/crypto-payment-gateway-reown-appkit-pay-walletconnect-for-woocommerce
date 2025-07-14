@@ -9,7 +9,7 @@ defined('ABSPATH') || exit;
 
 /**
  * Plugin Name: Reown Payment Gateway
- * Version:     1.0.0
+ * Version:     1.0.1
  * Plugin URI:  https://beycanpress.com/
  * Description: Accept cryptocurrency payments in your WooCommerce store using Reown (WalletConnect) payment gateway.
  * Author:      BeycanPress LLC

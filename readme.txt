@@ -4,8 +4,8 @@ Tags: woocommerce, payment gateway, reown, crypto, walletconnect
 Requires at least: 5.0
 Tested up to: 6.8
 Requires PHP: 8.1
-Stable Tag: 1.0.0
-Version: 1.0.0
+Stable Tag: 1.0.1
+Version: 1.0.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -17,11 +17,11 @@ Meet the ease of receiving crypto payments on your WordPress website with the Cr
 
 Right after Reown announced AppKit Pay, we got to work integrating it with WooCommerce. This initial version—set to be improved further in the future—is now available. All you need to do is enter your wallet address in the settings and create an AppKit ID (Project ID) via Reown Cloud. That’s it! You can now accept crypto payments directly through WooCommerce using Reown (WalletConnect) AppKit Pay.
 
-See AppKit Pay here: https://docs.reown.com/appkit/payments/overview#appkit-pay
+See AppKit Pay by <a href="https://docs.reown.com/appkit/payments/overview#appkit-pay">clicking here</a>
 
 = How to setup? =
 
-See: https://github.com/BeycanPress/reown-payment-gateway
+See: <a href="https://github.com/BeycanPress/crypto-payment-gateway-reown-appkit-pay-walletconnect-for-woocommerce">Reown AppKit Pay for WooCommerce Setup</a>
 
 = Supported networks =
 
@@ -76,6 +76,9 @@ You can easily translate with Loco translate.
 3. Enjoy.
 
 == Changelog ==
+
+= 1.0.1 =
+* Updated readme.txt
 
 = 1.0.0 =
 * Plugin released.
