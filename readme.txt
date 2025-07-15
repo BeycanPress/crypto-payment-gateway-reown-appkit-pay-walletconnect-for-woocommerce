@@ -4,8 +4,8 @@ Tags: woocommerce, payment gateway, reown, crypto, walletconnect
 Requires at least: 5.0
 Tested up to: 6.8
 Requires PHP: 8.1
-Stable Tag: 1.0.1
-Version: 1.0.1
+Stable Tag: 1.0.2
+Version: 1.0.2
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -37,6 +37,20 @@ And the testnet networks of these networks. We will add more networks in the fut
 
 Only native coin (like ETH, MATIC, BNB, AVAX, etc.) and some popular tokens (like USDC, USDT, DAI, etc.) are supported. We will add more tokens in the future.
 
+= Explore the premium version =
+
+= Supported networks =
+
+* EVM networks (Ethereum, BNB Smart Chain, Polygon, Avalanche, Fantom, Arbitrum, Optimism, etc.)
+* Solana (soon)
+* Bitcoin (soon)
+
+= Supported currencies =
+
+* Native coins (like ETH, MATIC, BNB, AVAX, etc.)
+* Any tokens exist in price API
+
+Buy premium by <a href="https://1.envato.market/jejdYn">clicking here</a>.
 
 = Meet with CryptoPay =
 
@@ -77,7 +91,7 @@ You can easily translate with Loco translate.
 
 == Changelog ==
 
-= 1.0.1 =
+= 1.0.2 =
 * Updated readme.txt
 
 = 1.0.0 =
